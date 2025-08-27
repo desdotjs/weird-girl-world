@@ -1,3 +1,11 @@
+canvas {
+    /* code for fullscreen sketch */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
 h1 {
     font-size: 40px;
     color: rgb(141, 245, 66)
