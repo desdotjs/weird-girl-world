@@ -1,7 +1,7 @@
 body {
 /* "body" is the room where everything happens */
     height: 100%;
-    margin: 30;
+    margin: 30px;
     padding: 0;
     background-color: lightpink;
 }
@@ -16,7 +16,7 @@ body {
   .cropped_rules {
     clip-path: inset(0 28% 0 5%); /* syntax: top right bottom left */
     position: relative; /* allows image to move */
-    left: -30px; /* move image left by 30px */
+    left: -2%; /* move image left by 30px */
   }
 
 
