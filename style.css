@@ -1,13 +1,35 @@
-canvas {
+body {
+/* "body" is the room where everything happens */
+    height: 100%;
+    margin: 30;
+    padding: 0;
+    background-color: lightpink;
+}
+
+  .button_scale {
+    width: 50%; /* scales down img to */
+  }
+
+  /* a class is a reusable name you give to html elements so you can style or target them using css or js */
+  /* a "." when labeling a class tells the browser to select all elements with that class name - can just be "button_scale" when calling it in html */
+
+  .cropped_rules {
+    clip-path: inset(0 170px 0 30px); /* syntax: top right bottom left */
+    position: relative; /* allows image to move */
+    left: -30px; /* move image left by 30px */
+  }
+
+canvas { 
     /* code for fullscreen sketch */
+    /* "canvas" is an html element used for rendering graphics via javascript */
     position: fixed;
     left: 0;
     top: 0;
     z-index: -1;
-}
+ } 
 
 h1 {
     font-size: 40px;
-    color: rgb(141, 245, 66)
+    color: rgb(0, 0, 0)
 
 }
