@@ -14,7 +14,7 @@ body {
   /* a "." when labeling a class tells the browser to select all elements with that class name - can just be "button_scale" when calling it in html */
 
   .cropped_rules {
-    clip-path: inset(0 170px 0 30px); /* syntax: top right bottom left */
+    clip-path: inset(0 28% 0 5%); /* syntax: top right bottom left */
     position: relative; /* allows image to move */
     left: -30px; /* move image left by 30px */
   }
