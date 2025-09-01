@@ -19,6 +19,7 @@ body {
     left: -30px; /* move image left by 30px */
   }
 
+
 canvas { 
     /* code for fullscreen sketch */
     /* "canvas" is an html element used for rendering graphics via javascript */
