@@ -9,7 +9,13 @@ function preload() {
   pixel.push(loadImage('assets/cursor_pixels/cupcake_pixel.gif'));
   pixel.push(loadImage('assets/cursor_pixels/icecream_pixel.gif'));
   pixel.push(loadImage('assets/cursor_pixels/paw_pixel.gif'));
+  pixel.push(loadImage('assets/cursor_pixels/bun_pixel.gif'));
+  pixel.push(loadImage('assets/cursor_pixels/sundae_pixel.gif'));
+  pixel.push(loadImage('assets/cursor_pixels/cherry_pixel.gif'));
+  pixel.push(loadImage('assets/cursor_pixels/chocobar_pixel.gif'));
   // images are courtesy of artists of https://www.glitter-graphics.com/ :)
+
+  // ".push" adds info to array - since we had to preload images, we added .push after our "pixel" variable to tell our code its array info!
 }
 
 function setup() {
@@ -22,15 +28,12 @@ function draw() {
   
   // brackets [] are used to access an element
 
-  
   let pixelArt = pixel[pixelIndex];
   image(pixelArt, mouseX, mouseY);
 
   //"%" finds the remainder (will ALWAYS be zero according to the expression below) so we can loop through the images!
   
   pixelIndex = (pixelIndex + 1) % pixel.length;
-
-  // we need an "if" statement to tell our code to switch to the next image ONLY after a certain amount of frames
   
   // ".length" tells p5.js how many items are in our array (we loaded 5 gifs)
   
