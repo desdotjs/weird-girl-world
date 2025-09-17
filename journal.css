@@ -1,0 +1,17 @@
+
+body {
+    /* "body" is the room where everything happens */
+        height: 100%;
+        margin: 30px;
+        padding: 0;
+        background-color: lightpink;
+    }
+    
+      .img_scale {
+    
+        width: 50%; /* scales down img to */
+      }
+
+canvas {
+    display: block;
+}
