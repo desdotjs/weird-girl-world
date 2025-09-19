@@ -17,6 +17,29 @@ class Cell {
 // OUR OBJECT IS THE CELLS, NOT THE IMAGES  
 // a class is a reuseable thing with data AND behavior...
 // ... while a function is ONLY a chunk of reusable behavior
+// "constructor" is a method in OOP that allows you to create multiple objects with similar structure but different data as opposed to creating a bunch of different objects. essentially, you can create your own parameters / syntax for an object:
+
+// class Person {
+//   constructor(name, age) {
+//     this.name = name; // unique to each instance
+//     this.age = age;
+//   }
+
+//   greet() {
+//     console.log("Hello, " + this.name);
+//   }
+// }
+
+// // now we can make many "Person" objects easily, following the parameters of our constructor
+
+// const alice = new Person("Alice"(name), 25(age));
+// const bob = new Person("Bob", 30);
+// const charlie = new Person("Charlie", 22);
+
+// alice.greet();   // Hello, Alice
+// bob.greet();     // Hello, Bob
+// charlie.greet(); // Hello, Charlie
+
   
   constructor(x, y, baseImg) {
     this.x = x; // x + y are inputs for our cell. we can define these later
@@ -56,11 +79,12 @@ class Cell {
     }
   }
 
-  // checking if mouse is within the boundaries of our checker board cells
+  // "contains" checks if mouse is within the boundaries of our checker board cells
   
   contains(mx, my) {
-    
+  
 // mx - mouse x coordinate, my - mouse y coordinate. we give these meaning later
+
     return (
 // return sends true or false value back to your method
 // in this case contains is our method
@@ -110,7 +134,7 @@ function setup() {
 
 function draw() {
   
-  background(220);
+  background(255, 182, 193);
 
   for (let y = 0; y < rows; y++) {
     
