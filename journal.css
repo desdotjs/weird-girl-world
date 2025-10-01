@@ -12,6 +12,12 @@ body {
         width: 50%; /* scales down img to */
       }
 
+      .home_img_scale {
+
+        width: 20%;
+
+      }
+
 canvas {
     display: block;
 }
