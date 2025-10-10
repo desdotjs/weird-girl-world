@@ -7,6 +7,7 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:journal.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\journal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:journal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -15,8 +16,17 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Git\\ReleaseNotes.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\journal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:journal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\rules.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -34,7 +44,7 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 120,
+      "VerticalTabListWidth": 302,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -47,6 +57,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< Updated upstream
               "Title": "projects.html",
               "DocumentMoniker": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\projects.html",
               "RelativeDocumentMoniker": "projects.html",
@@ -56,6 +67,16 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-10T01:43:32.351Z",
               "EditorCaption": ""
+=======
+              "Title": "ReleaseNotes.html",
+              "DocumentMoniker": "C:\\Program Files\\Git\\ReleaseNotes.html",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Git\\ReleaseNotes.html",
+              "ToolTip": "C:\\Program Files\\Git\\ReleaseNotes.html",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Git\\ReleaseNotes.html",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswCgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-10T01:29:42.237Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -83,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "journal.css",
               "DocumentMoniker": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\journal.css",
               "RelativeDocumentMoniker": "journal.css",
@@ -96,13 +117,17 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 1,
+>>>>>>> Stashed changes
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-09-29T04:55:02.573Z",
               "EditorCaption": ""
@@ -127,7 +152,11 @@
               "RelativeDocumentMoniker": "journal.html",
               "ToolTip": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\journal.html",
               "RelativeToolTip": "journal.html",
+<<<<<<< Updated upstream
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-09-29T02:50:08.227Z",
               "EditorCaption": ""
