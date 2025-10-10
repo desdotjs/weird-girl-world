@@ -12,21 +12,10 @@ body {
         width: 20%; /* scales down img to */
       }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      .img_scale {
-=======
-      .home_img_scale {
->>>>>>> Stashed changes
-=======
-      .home_img_scale {
->>>>>>> Stashed changes
-=======
-      .home_img_scale {
->>>>>>> Stashed changes
 
-        width: 20%;
+      .img_scale {
+
+        width: 50%;
 
       }
 
