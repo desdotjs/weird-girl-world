@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:journal.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\cursor-trail\\cursor-trail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cursor-trail\\cursor-trail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\journal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:journal.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -15,20 +23,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:projects.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\rules.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:rules.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\cursor-trail\\cursor-trail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cursor-trail\\cursor-trail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "projects.html",
               "DocumentMoniker": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\projects.html",
               "RelativeDocumentMoniker": "projects.html",
@@ -58,7 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "rules.html",
               "DocumentMoniker": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\rules.html",
               "RelativeDocumentMoniker": "rules.html",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\style.css",
               "RelativeDocumentMoniker": "style.css",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "journal.css",
               "DocumentMoniker": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\journal.css",
               "RelativeDocumentMoniker": "journal.css",
@@ -90,12 +90,11 @@
               "RelativeToolTip": "journal.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-29T04:55:26.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T04:55:26.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -103,19 +102,21 @@
               "RelativeToolTip": "index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-09-29T04:55:02.573Z"
+              "WhenOpened": "2025-09-29T04:55:02.573Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "cursor-trail.js",
               "DocumentMoniker": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\cursor-trail\\cursor-trail.js",
               "RelativeDocumentMoniker": "cursor-trail\\cursor-trail.js",
               "ToolTip": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\cursor-trail\\cursor-trail.js",
               "RelativeToolTip": "cursor-trail\\cursor-trail.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-29T03:22:38.471Z"
+              "WhenOpened": "2025-09-29T03:22:38.471Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -125,10 +126,14 @@
               "RelativeDocumentMoniker": "journal.html",
               "ToolTip": "C:\\Users\\dkbor\\OneDrive\\Documents\\GitHub Desktop\\weird-girl-world\\journal.html",
               "RelativeToolTip": "journal.html",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-09-29T02:50:08.227Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Bookmark",
