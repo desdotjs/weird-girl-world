@@ -32,19 +32,19 @@ let bubbles = []; // storage for bubble information / properties
 function preload() {
   // just for loading assets
   
-  bgImg = loadImage("https://i.imgur.com/y0NdFJh.png");
+  bgImg = loadImage("../assets/laundry_space_media/windows_xp_background.png");
   
-  bubbleImg = loadImage("https://i.imgur.com/pL1VzK8.png");
+  bubbleImg = loadImage("../assets/laundry_space_media/bubble_graphic.png")
   
-  washerImg1 = loadImage("https://i.imgur.com/cT5XzQn.png");
+  washerImg1 = loadImage("../assets/laundry_space_media/washer_icon.png")
   
-  washerImg2 = loadImage("https://i.imgur.com/cT5XzQn.png");
+  washerImg2 = loadImage("../assets/laundry_space_media/washer_icon.png")
 
-  detergentImg = loadImage ("https://i.imgur.com/Wp20fsl.png");
+  detergentImg = loadImage("../assets/laundry_space_media/detergent_icon.png")
   
-  basketImg = loadImage ("https://i.imgur.com/gPLAEy0.png");
+  basketImg = loadImage("../assets/laundry_space_media/basket_icon.png")
   
-  plantImg = loadImage ("https://i.imgur.com/8lPhmda.png");
+  plantImg = loadImage("../assets/laundry_space_media/plant_icon.png")
   
 }
 
@@ -63,7 +63,7 @@ function draw() {
  
   // background(220);
   
-  console.log(mouseX, mouseY);
+  //console.log(mouseX, mouseY);
   
   image(bgImg, width / 2, height / 2, width, height);
   
