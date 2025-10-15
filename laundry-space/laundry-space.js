@@ -33,6 +33,7 @@ function preload() {
   // just for loading assets
   
   bgImg = loadImage("../assets/laundry_space_media/windows_xp_background.png");
+  // doug noted "../" tells our script to look towards the parent folder
   
   bubbleImg = loadImage("../assets/laundry_space_media/bubble_graphic.png")
   
