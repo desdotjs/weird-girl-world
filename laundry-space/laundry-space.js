@@ -11,8 +11,8 @@ let basketImg;
 let plantImg;
 let bgImg; 
 
-let wX = 1050;
-let wY = 520;
+let wX = 1350;
+let wY = 650;
 
 // BOOLEANS
 
@@ -49,13 +49,19 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1366, 768);
+  createCanvas(windowWidth, windowHeight);
   
   imageMode(CENTER);
 
   // arguments go inside / are fed into parameters
   
 }
+
+  function windowResized(){
+
+  resizeCanvas(windowWidth, windowHeight);
+
+  }
 
 function draw() {
   
