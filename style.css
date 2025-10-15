@@ -30,7 +30,13 @@ canvas {
     z-index: -1;
  } 
 
-h1 {
+       .projects_img_scale {
+
+        width: 20%
+
+      }
+
+.h1 {
     font-size: 40px;
     color: rgb(0, 0, 0)
 
