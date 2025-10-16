@@ -109,7 +109,7 @@ function draw() {
     // "new" creates an object from a constructor function
     
     if (frameCount % 3 === 0) {
-      //strict equality ( === ) operator checks whether its two operands are equal, returning a boolean result0
+      //strict equality ( === ) operator checks whether its two operands are equal, returning a boolean result
       
       bubbles.push(new Bubble(wX, wY));
       
