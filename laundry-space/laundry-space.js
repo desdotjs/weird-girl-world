@@ -253,8 +253,20 @@ class Bubble {
     constructor(x, y) {
 
       this.affirmation = pickRandom [("you CAN do it!", "woohoo!! ^_^", "you ARE beautiful", "i love you")];
-      
+      this.pos = createVector(x, y);
+      this.speed = 3;
+      // this.fade
 
+    }
+
+    update() {
+
+
+    }
+
+    spawn() {
+
+      
     }
 
 
