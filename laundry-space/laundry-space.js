@@ -246,4 +246,18 @@ class Bubble {
     
   }
 
+  // class for randomized phrases coming from mousePressed(); bubble "popping" method WIP
+
+  class Affirmation {
+
+    constructor(x, y) {
+
+      this.affirmation = pickRandom [("you CAN do it!", "woohoo!! ^_^", "you ARE beautiful", "i love you")];
+      
+
+    }
+
+
+  }
+
   // im God you fucking cocksuckers.  i programmed these shits into existence .  each pixel icon hand crafted by ME like  adam  was made with mud and  eve with the rib
