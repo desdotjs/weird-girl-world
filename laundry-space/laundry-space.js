@@ -280,7 +280,7 @@
 
   // im God you fucking cocksuckers.  i programmed these shits into existence .  each pixel icon hand crafted by ME like  adam  was made with mud and  eve with the rib
 
-  // more comments than code hashtag learning and be nice to me
+// more comments than code hashtag learning and be nice to me
 // command D - all instances of text highlighted replaced / updated
 
 // ! means NOT
@@ -345,17 +345,18 @@ function setup() {
 
   // initializing p5.party
   partyConnect("wss://deepstream-server-1.herokuapp.com", "laundry-space", () => {
-  console.log("Connected to p5.party!");
+    console.log("Connected to p5.party!");
 
-  sharedCycleState = partyAddShared("cycleState", cycleState);
-  sharedCycleToggle = partyAddShared("cycleToggle", cycleToggle);
-  sharedBubbles = partyAddShared("bubbles", []);
-  sharedDetergent = partyAddShared("detergent", detergent);
-  sharedBasket = partyAddShared("basket", basket);
-  sharedPlant = partyAddShared("plant", plant);
-  sharedBubblePop = partyAddShared("bubblePop", bubblePop);
-  
-});
+    // shared variables
+    sharedCycleState = partyAddShared("cycleState", cycleState);
+    sharedCycleToggle = partyAddShared("cycleToggle", cycleToggle);
+    sharedBubbles = partyAddShared("bubbles", []);
+    sharedDetergent = partyAddShared("detergent", detergent);
+    sharedBasket = partyAddShared("basket", basket);
+    sharedPlant = partyAddShared("plant", plant);
+    sharedBubblePop = partyAddShared("bubblePop", bubblePop);
+    
+  });
 
   createCanvas(windowWidth, windowHeight);
   
@@ -366,49 +367,63 @@ function setup() {
 }
 
 function windowResized(){
-
   resizeCanvas(windowWidth, windowHeight);
-
 }
 
 function draw() {
   
   frameRate(30);
- 
+
+  // wait until shared variables are ready
+  if (!sharedCycleState || !sharedCycleToggle || !sharedBubbles || !sharedDetergent || !sharedBasket || !sharedPlant) {
+    return; // skip this frame until everything is defined
+  }
+  
+  // get current shared values
+  let cycleState = sharedCycleState.get();
+  let cycleToggle = sharedCycleToggle.get();
+  let bubbles = sharedBubbles.get();
+  let detergent = sharedDetergent.get();
+  let basket = sharedBasket.get();
+  let plant = sharedPlant.get();
+  
   // background(220);
   
   //console.log(mouseX, mouseY);
   
   image(bgImg, width / 2, height / 2, width, height);
   
-  image(detergentImg, sharedDetergent.get().x, sharedDetergent.get().y, sharedDetergent.get().size, sharedDetergent.get().size);
+  image(detergentImg, detergent.x, detergent.y, detergent.size, detergent.size);
   
-  image(basketImg, sharedBasket.get().x, sharedBasket.get().y, sharedBasket.get().size, sharedBasket.get().size);
+  image(basketImg, basket.x, basket.y, basket.size, basket.size);
   
-  image(plantImg, sharedPlant.get().x, sharedPlant.get().y, sharedPlant.get().size, sharedPlant.get().size);
+  image(plantImg, plant.x, plant.y, plant.size, plant.size);
 
   
   // image arguments: image(img, x, y, width, height)
   
   // washer cycle toggle (on/off every interval)
-  if (frameCount >= sharedCycleToggle.get()) {
+  if (frameCount >= cycleToggle) {
     // if frameCount is greater than or equal to 0 (cycleToggle)...
 
-    sharedCycleState.set(!sharedCycleState.get());
+    cycleState = !cycleState;
+    sharedCycleState.set(cycleState); // update networked state
+
     // flip the washer on/off: if it was on, turn it off; if it was off, turn it on ...
 
-    let frameInterval = floor(random(1000, 10));
+    frameInterval = floor(random(1000, 10));
 
     // pick a new random interval for the next toggle, between 1000 and 3000 frames
     // "frameInterval" so we dont gotta type allat
     
-    sharedCycleToggle.set(frameCount + frameInterval);
+    cycleToggle = frameCount + frameInterval;
+    sharedCycleToggle.set(cycleToggle); // update networked toggle
     
     // grabs current frame then adds a random value between 500 - 1000 for us to wait between cycleState
     
   }
 
-  if (sharedCycleState.get()) {
+  if (cycleState) {
     
     image(washerImg1, wX, wY);
     
@@ -418,10 +433,9 @@ function draw() {
     if (frameCount % 3 === 0) {
       //strict equality ( === ) operator checks whether its two operands are equal, returning a boolean result
       
-      let newB = new Bubble(wX, wY);
-      let tempBubbles = sharedBubbles.get();
-      tempBubbles.push(newB);
-      sharedBubbles.set(tempBubbles);
+      let newBubble = new Bubble(wX, wY);
+      bubbles.push(newBubble);
+      sharedBubbles.set(bubbles); // update shared array
       
     }
     
@@ -434,10 +448,9 @@ function draw() {
   }
   
   // bubbles always update + draw, no matter what cycleState is
-  let allBubbles = sharedBubbles.get();
-  for (let i = 0; i < allBubbles.length; i++) {
+  for (let i = 0; i < bubbles.length; i++) {
     
-    let b = allBubbles[i];
+    let b = bubbles[i];
     
     b.update(); // keep floating even if washer is "off"
     b.spawn(); // always visible
@@ -445,7 +458,8 @@ function draw() {
   }
   
   // clean up bubbles that float off screen
-  allBubbles = allBubbles.filter(b => { //=>means “do this with the stuff in the parentheses"
+  
+  bubbles = bubbles.filter(b => { //=>means “do this with the stuff in the parentheses"
     // keep every bubble b where b.size is bigger than 5
     
     let onScreen =
@@ -455,17 +469,17 @@ function draw() {
 
     let hitDetergent =
         
-      dist(b.pos.x, b.pos.y, sharedDetergent.get().x, sharedDetergent.get().y) < (sharedDetergent.get().size / 2 + b.size / 2);
+      dist(b.pos.x, b.pos.y, detergent.x, detergent.y) < (detergent.size / 2 + b.size / 2);
     
     // dist is a built-in p5 function that measures how far two points are from each other
     
     let hitBasket =
         
-        dist(b.pos.x, b.pos.y, sharedBasket.get().x, sharedBasket.get().y) < (sharedBasket.get().size / 2 + b.size / 2);
+        dist(b.pos.x, b.pos.y, basket.x, basket.y) < (basket.size / 2 + b.size / 2);
     
     let hitPlant =
         
-        dist(b.pos.x, b.pos.y, sharedPlant.get().x, sharedPlant.get().y) < (sharedPlant.get().size / 2 + b.size / 2);
+        dist(b.pos.x, b.pos.y, plant.x, plant.y) < (plant.size / 2 + b.size / 2);
     
     return onScreen && !hitDetergent && !hitBasket && !hitPlant;
     
@@ -475,10 +489,10 @@ function draw() {
     
   });
 
-  sharedBubbles.set(allBubbles);
-                         
+  sharedBubbles.set(bubbles); // update shared bubbles
+  
   // && checks two (or more) conditions and returns true ONLY if all of them are true
-                         
+                           
   // keep the bubble only if its x position is bigger than 0… (so not off the left side)…
   // and smaller than the width of the canvas (so not off the right side)…
   // and its y position is bigger than 0 (not above the top)…
