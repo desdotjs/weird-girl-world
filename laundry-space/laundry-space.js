@@ -16,13 +16,13 @@ let wY = 650;
 
 // DECLARING SHARED / GLOBAL VARIABLES FOR SERVER BULLSHIT
 
-let sharedCycleState;
-let sharedCycleToggle;
-let sharedBubbles;
-let sharedDetergent;
-let sharedBasket;
-let sharedPlant;
-let sharedBubblePop;
+// let sharedCycleState;
+// let sharedCycleToggle;
+// let sharedBubbles;
+// let sharedDetergent;
+// let sharedBasket;
+// let sharedPlant;
+// let sharedBubblePop;
 
 // BOOLEANS
 
@@ -62,18 +62,18 @@ function preload() {
 function setup() {
 
   // initializing p5.party
-  partyConnect("wss://deepstream-server-1.herokuapp.com", "laundry-space", () => {
-  console.log("Connected to p5.party!");
+//   partyConnect("wss://deepstream-server-1.herokuapp.com", "laundry-space", () => {
+//   console.log("Connected to p5.party!");
 
-  sharedCycleState = partyAddShared("cycleState", cycleState);
-  sharedCycleToggle = partyAddShared("cycleToggle", cycleToggle);
-  sharedBubbles = partyAddShared("bubbles", []);
-  sharedDetergent = partyAddShared("detergent", detergent);
-  sharedBasket = partyAddShared("basket", basket);
-  sharedPlant = partyAddShared("plant", plant);
-  sharedBubblePop = partyAddShared("bubblePop", bubblePop);
+//   sharedCycleState = partyAddShared("cycleState", cycleState);
+//   sharedCycleToggle = partyAddShared("cycleToggle", cycleToggle);
+//   sharedBubbles = partyAddShared("bubbles", []);
+//   sharedDetergent = partyAddShared("detergent", detergent);
+//   sharedBasket = partyAddShared("basket", basket);
+//   sharedPlant = partyAddShared("plant", plant);
+//   sharedBubblePop = partyAddShared("bubblePop", bubblePop);
   
-});
+// });
 
   createCanvas(windowWidth, windowHeight);
   
