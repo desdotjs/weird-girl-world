@@ -285,6 +285,7 @@
 
 // ! means NOT
 
+
 let washerImg1; 
 let washerImg2; 
 let bubbleImg; 
@@ -319,6 +320,9 @@ let bubbleStart = 0; //
 
 let bubbles = []; // storage for bubble information / properties
 
+// PARTY READY FLAG
+let partyReady = false;
+
 // CODE START //
 
 function preload() {
@@ -343,6 +347,9 @@ function preload() {
 
 function setup() {
 
+  createCanvas(windowWidth, windowHeight);
+  imageMode(CENTER);
+
   // initializing p5.party
   partyConnect("wss://deepstream-server-1.herokuapp.com", "laundry-space", () => {
     console.log("Connected to p5.party!");
@@ -355,12 +362,9 @@ function setup() {
     sharedBasket = partyAddShared("basket", basket);
     sharedPlant = partyAddShared("plant", plant);
     sharedBubblePop = partyAddShared("bubblePop", bubblePop);
-    
-  });
 
-  createCanvas(windowWidth, windowHeight);
-  
-  imageMode(CENTER);
+    partyReady = true; // now we can safely use .get()
+  });
 
   // arguments go inside / are fed into parameters
   
@@ -375,14 +379,12 @@ function draw() {
   frameRate(30);
 
   // wait until shared variables are ready
-  if (!sharedCycleState || !sharedCycleToggle || !sharedBubbles || !sharedDetergent || !sharedBasket || !sharedPlant) {
-    return; // skip this frame until everything is defined
-  }
-  
+  if (!partyReady) return;
+
   // get current shared values
-  let cycleState = sharedCycleState.get();
-  let cycleToggle = sharedCycleToggle.get();
-  let bubbles = sharedBubbles.get();
+  cycleState = sharedCycleState.get();
+  cycleToggle = sharedCycleToggle.get();
+  bubbles = sharedBubbles.get();
   let detergent = sharedDetergent.get();
   let basket = sharedBasket.get();
   let plant = sharedPlant.get();
