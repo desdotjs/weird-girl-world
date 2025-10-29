@@ -18,6 +18,17 @@ body {
 
       }
 
+      .journal {
+
+        max-width: 120ch;
+      }
+
+      .text_size {
+
+        font-size: 19px;
+
+      }
+
 canvas {
     display: block;
 }
