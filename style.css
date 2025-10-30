@@ -48,6 +48,13 @@ canvas {
 
 }
 
+
+      .portraiticon_img_scale {
+
+        width: 15%
+
+      }
+
 .h1 {
     font-size: 40px;
     color: rgb(0, 0, 0)
