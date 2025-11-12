@@ -29,6 +29,15 @@ body {
 
       }
 
+      .button-section a {
+        
+          display: block; /* stacks them vertically */
+          
+          width: fit-content; /* clickable only around the image */
+          
+      }
+
+
 
 canvas {
     display: block;
