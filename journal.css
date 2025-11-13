@@ -9,7 +9,7 @@ body {
     
       .home_img_scale {
     
-        width: 20%; /* scales down img to */
+        width: 250px; /* scales down img to */
       }
 
       .img_scale {
