@@ -6,6 +6,27 @@ body {
     background-color: lightpink;
 }
 
+.header {
+
+  display: flex;
+  align-items: center;            /* keeps them aligned vertically */
+  height: 90%;
+  position: relative;
+  z-index: 10; /* higher than the canvas */
+  background-color: lightpink;
+  gap: 80px;
+
+}
+
+.header img {
+  
+  width: 15%; /* adjust as needed */
+  position: relative;
+
+  left: 875px;
+
+
+}
   .img_scale {
 
     width: 50%; /* scales down img to */
@@ -31,32 +52,14 @@ canvas {
     /* "canvas" is an html element used for rendering graphics via javascript */
     position: fixed;
     left: 0;
-    top: 0;
+    top: 100px;
     z-index: -1;
  } 
 
-.projects_img_scale {
-
-  width: 20%
-
-  }
-
-.washer_img_scale {
-
-  width: 9%;
-  height: auto; 
-
-}
-
-
-      .portraiticon_img_scale {
-
-        width: 15%
-
-      }
 
 .h1 {
     font-size: 40px;
     color: rgb(0, 0, 0)
 
 }
+
