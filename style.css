@@ -6,46 +6,79 @@ body {
     background-color: lightpink;
 }
 
+
+
 .header {
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  align-items: center;            /* keeps them aligned vertically */
-  height: 90%;
-  position: relative;
-  z-index: 10; /* higher than the canvas */
+  justify-content: space-between;  /* left = title, right = menu */
+  align-items: flex-start;
+  padding: 10px;
   background-color: lightpink;
-  gap: 80px;
+  z-index: 30;
 
 }
 
-.header img {
+.title-group {
+
+  display: flex;
+  flex-direction: column; /* stack h1 + p vertically */
+  width: 100%;
+  margin-left: 45px;
+
+}
+
+
+.menu_img_scale {
   
-  width: 15%; /* adjust as needed */
-  position: relative;
+  width: 300px; /* adjust as needed */
+  height: auto;
+  margin-left: 45px; 
 
-  left: 875px;
+}
+
+.menu {
+
+  position: flex;
+  margin-right: 50px;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: row; 
+  z-index: 20;
+
+}
+
+.button-section {
+
+  padding-top: 100px;
+  display: inline-block;
+  flex-direction: column;  /* stack vertically */
+  gap: 50px; /*space between buttons */
 
 
 }
-  .img_scale {
 
-    width: 50%; /* scales down img to */
-  }
+.img_scale {
 
+  width: auto;
+  max-width: 800px;
+  height: auto;
+  display: block;
+
+}
+
+.cropped_rules {
+
+  right: 20px;
+  position:relative
+
+}
   /* a class is a reusable name you give to html elements so you can style or target them using css or js */
   /* a "." when labeling a class tells the browser to select all elements with that class name - can just be "button_scale" when calling it in html */
-  
-    .insta_img_scale {
-
-    width: 35%; /* scales down img to */
-  }
-
-  .cropped_rules {
-    clip-path: inset(0 28% 0 5%); /* syntax: top right bottom left */
-    position: relative; /* allows image to move */
-    left: -2%; /* move image left by 30px */
-  }
-
 
 canvas { 
     /* code for fullscreen sketch */

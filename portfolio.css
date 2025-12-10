@@ -1,38 +1,71 @@
 body {
-/* "body" is the room where everything happens */
-    height: 100%;
-    margin: 30px;
-    padding: 0;
-    background-color: lightpink;
+  height: 100%;
+  margin: 30px;
+  padding: 0;
+  background-color: lightpink;
 }
 
-  .img_scale {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  /* left = title, right = menu */
+  align-items: flex-start;
+  padding: 20px;
+  background-color: lightpink;
+  z-index: 30;
+}
 
-    width: 50%; /* scales down img to */
-  }
+.title-group {
+  display: flex;
+  flex-direction: column;  /* stack h1 + p vertically */
+  margin-left: 45px;       /* nudges text left */
+}
 
-  /* a class is a reusable name you give to html elements so you can style or target them using css or js */
-  /* a "." when labeling a class tells the browser to select all elements with that class name - can just be "button_scale" when calling it in html */
+.menu {
 
+  display: flex;
 
-canvas { 
-    /* code for fullscreen sketch */
-    /* "canvas" is an html element used for rendering graphics via javascript */
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -1;
- } 
+  flex-direction: row;
 
-.projects_img_scale {
+  gap: 20px;               /* space between buttons */
 
-  width: 20%
+  margin-right: 50px;      /* distance from right edge */
 
-  }
+  align-items: center;
 
+}
 
-.h1 {
-    font-size: 40px;
-    color: rgb(0, 0, 0)
+.menu_img_scale {
 
+  width: 300px; /* same size as index.html buttons */
+  height: auto;
+  margin-right: 50px;
+
+}
+
+.project_icons {
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+  margin-left: 20px;
+  width: 15%;
+  gap: 35px;
+
+}
+
+.icon_scale {
+
+  width: 250px;
+
+}
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
