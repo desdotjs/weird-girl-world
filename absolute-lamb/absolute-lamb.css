@@ -7,9 +7,11 @@ html, body {
   /* center horizontally */
   align-items: center;
   /* center vertically */
+  
 
 }
 canvas {
   display: block;
+  cursor: url('../assets/absolute_lamb_media/brush_cursor.png') 0 0, auto;
 
 }

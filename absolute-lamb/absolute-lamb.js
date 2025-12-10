@@ -2,6 +2,7 @@ let sheepImg;
 let dogImg;
 
 let dogNPC;
+let audio;
 
 // storing wool + stardust pngs, 12 total
 
@@ -42,6 +43,9 @@ const spawnZones = [
 function setup() {
   
   createCanvas(768, 1104);
+
+  audio.loop();
+  audio.setVolume(0.5);
   
   imageMode(CENTER);
   
@@ -80,7 +84,11 @@ function wsInitializer() { // "wool spawn initializer"
   }  
 
 function preload() {
+
+  soundFormats('mp3');
   
+  audio = loadSound("../assets/absolute_lamb_media/lamb.mp3");
+
   sheepImg = loadImage("../assets/absolute_lamb_media/sheep_img.png");
   dogImg = loadImage("../assets/absolute_lamb_media/dog_gif.gif");
   
@@ -147,6 +155,15 @@ function draw() {
   
 }
 
+function mousePressed() {
+
+  if (!audio.isPlaying()) {
+
+    audio.loop();
+
+  }
+}
+
 function checkHover() {
   
   let mz = spawnZones[this.zIndex]; // mz "mouse zones"
@@ -211,7 +228,10 @@ class Wool {
   let imgSet =
     
     this.cIndex === 0 ? woolImg0 :
-  
+    // if cleanliness index is 0, it strictly equals woolImg0 array
+    // if not, is cIndex 1? then use woolImg1... etc
+    // ? is kind of like if else shorthand
+
     this.cIndex === 1 ? woolImg1 :
   
     this.cIndex === 2 ? woolImg2 :
