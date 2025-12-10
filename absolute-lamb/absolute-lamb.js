@@ -84,20 +84,20 @@ function preload() {
   sheepImg = loadImage("../assets/absolute_lamb_media/sheep_img.png");
   dogImg = loadImage("../assets/absolute_lamb_media/dog_gif.gif");
   
-  woolImg0.push(loadImage("../assets/absolute_lamb_media/wool1.png"));
-  woolImg0.push(loadImage("../assets/absolute_lamb_media/wool2.png"));
-  woolImg0.push(loadImage("../assets/absolute_lamb_media/wool3.png"));
-  woolImg0.push(loadImage("../assets/absolute_lamb_media/wool4.png"));
+  woolImg0.push(loadImage("../assets/absolute_lamb_media/wool 1.png"));
+  woolImg0.push(loadImage("../assets/absolute_lamb_media/wool 2.png"));
+  woolImg0.push(loadImage("../assets/absolute_lamb_media/wool 3.png"));
+  woolImg0.push(loadImage("../assets/absolute_lamb_media/wool 4.png"));
   
-  woolImg1.push(loadImage("../assets/absolute_lamb_media/wool1.1.png"));
-  woolImg1.push(loadImage("../assets/absolute_lamb_media/wool2.1.png"));
-  woolImg1.push(loadImage("../assets/absolute_lamb_media/wool3.1.png"));
-  woolImg1.push(loadImage("../assets/absolute_lamb_media/wool4.1.png"));
+  woolImg1.push(loadImage("../assets/absolute_lamb_media/wool 1.1.png"));
+  woolImg1.push(loadImage("../assets/absolute_lamb_media/wool 2.1.png"));
+  woolImg1.push(loadImage("../assets/absolute_lamb_media/wool 3.1.png"));
+  woolImg1.push(loadImage("../assets/absolute_lamb_media/wool 4.1.png"));
   
-  woolImg2.push(loadImage("../assets/absolute_lamb_media/wool1.2.png"));
-  woolImg2.push(loadImage("../assets/absolute_lamb_media/wool2.2.png"));
-  woolImg2.push(loadImage("../assets/absolute_lamb_media/wool3.2.png"));
-  woolImg2.push(loadImage("../assets/absolute_lamb_media/wool4.2.png"));
+  woolImg2.push(loadImage("../assets/absolute_lamb_media/wool 1.2.png"));
+  woolImg2.push(loadImage("../assets/absolute_lamb_media/wool 2.2.png"));
+  woolImg2.push(loadImage("../assets/absolute_lamb_media/wool 3.2.png"));
+  woolImg2.push(loadImage("../assets/absolute_lamb_media/wool 4.2.png"));
   
   sdImg0.push(loadImage("../assets/absolute_lamb_media/blue_star.png"));
   sdImg0.push(loadImage("../assets/absolute_lamb_media/rainbow_heart.png"));
